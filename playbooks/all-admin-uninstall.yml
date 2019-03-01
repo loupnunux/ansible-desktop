@@ -1,0 +1,22 @@
+---
+
+- name: ALL | Admin | Install
+  hosts: all
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - { role: archives, state: 'uninstall' }
+    - { role: cronapt, state: 'uninstall' }
+    - { role: git, state: 'uninstall' }
+    - { role: iptables, state: 'uninstall' }
+    - { role: linuxlts, state: 'uninstall' }
+    - { role: locate, state: 'uninstall' }
+    - { role: networktools, state: 'uninstall' }
+    - { role: rsync, state: 'uninstall' }
+    - { role: ruby, state: 'uninstall' }
+    - { role: ssh, state: 'uninstall' }
+    - { role: testdisk, state: 'uninstall' }
+    - { role: vim, state: 'uninstall' }
+    - { role: zsh, state: 'uninstall' }
+

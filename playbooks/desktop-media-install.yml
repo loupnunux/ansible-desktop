@@ -1,0 +1,15 @@
+---
+
+- name: DESKTOP | Media | Install
+  hosts: desktop
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - { role: audacity, state: 'install' }
+    - { role: avidemux, state: 'install' }
+    - { role: kodi, state: 'install' }
+    - { role: simplescreenrecorder, state: 'install' }
+    - { role: videocodec, state: 'install' }
+    - { role: vlc, state: 'install' }
+

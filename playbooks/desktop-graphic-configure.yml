@@ -1,0 +1,9 @@
+- name: DESKTOP | Graphic | Configure
+  hosts: desktop
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - { role: blender, state: 'configure' }
+    - { role: gimp, state: 'configure' }
+

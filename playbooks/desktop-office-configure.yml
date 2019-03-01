@@ -1,0 +1,12 @@
+---
+
+- name: DESKTOP | Office | Configure
+  hosts: desktop
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - { role: firefox, state: 'configure' }
+    - { role: owncloudclient, state: 'configure' }
+    - { role: thunar, state: 'configure' }
+

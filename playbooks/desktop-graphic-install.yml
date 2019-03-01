@@ -1,0 +1,17 @@
+---
+
+- name: DESKTOP | Graphic | Install
+  hosts: desktop
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - { role: blender, state: 'install' }
+    - { role: cura, state: 'install' }
+    - { role: darktable, state: 'install' }
+    - { role: digikam, state: 'install' }
+    - { role: freecad, state: 'install' }
+    - { role: gimp, state: 'install' }
+    - { role: inkscape, state: 'install' }
+    - { role: krita, state: 'install' }
+

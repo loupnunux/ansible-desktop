@@ -1,0 +1,17 @@
+---
+
+- name: DESKTOP | Graphic | Uninstall
+  hosts: desktop
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - { role: blender, state: 'uninstall' }
+    - { role: cura, state: 'uninstall' }
+    - { role: darktable, state: 'uninstall' }
+    - { role: digikam, state: 'uninstall' }
+    - { role: freecad, state: 'uninstall' }
+    - { role: gimp, state: 'uninstall' }
+    - { role: inkscape, state: 'uninstall' }
+    - { role: krita, state: 'uninstall' }
+

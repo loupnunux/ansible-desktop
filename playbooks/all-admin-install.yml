@@ -1,0 +1,23 @@
+---
+
+- name: ALL | Admin | Install
+  hosts: all
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - { role: users, state: 'configure' }
+    - { role: archives, state: 'install' }
+    - { role: cronapt, state: 'install' }
+    - { role: git, state: 'install' }
+    - { role: iptables, state: 'install' }
+    - { role: linuxlts, state: 'install' }
+    - { role: locate, state: 'install' }
+    - { role: networktools, state: 'install' }
+    - { role: rsync, state: 'install' }
+    - { role: ruby, state: 'install' }
+    - { role: ssh, state: 'install' }
+    - { role: testdisk, state: 'install' }
+    - { role: vim, state: 'install' }
+    - { role: zsh, state: 'install' }
+

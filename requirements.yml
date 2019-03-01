@@ -1,0 +1,287 @@
+# Install a role at a specific commit from GitLab#
+
+- name: apt
+  src: https://github.com/loupnunux/ansible-desktop-roles-apt.git
+  scm: git
+  version: master
+
+- name: archives
+  src: https://github.com/loupnunux/ansible-desktop-roles-archives.git
+  scm: git
+  version: master
+
+- name: audacity
+  src: https://github.com/loupnunux/ansible-desktop-roles-audacity.git
+  scm: git
+  version: master
+
+- name: avidemux
+  src: https://github.com/loupnunux/ansible-desktop-roles-avidemux.git
+  scm: git
+  version: master
+
+- name: bash
+  src: https://github.com/loupnunux/ansible-desktop-roles-bash.git
+  scm: git
+  version: master
+
+- name: blender
+  src: https://github.com/loupnunux/ansible-desktop-roles-blender.git
+  scm: git
+  version: master
+
+- name: calibre
+  src: https://github.com/loupnunux/ansible-desktop-roles-calibre.git
+  scm: git
+  version: master
+
+- name: cronapt
+  src: https://github.com/loupnunux/ansible-desktop-roles-cronapt.git
+  scm: git
+  version: master
+
+- name: cups
+  src: https://github.com/loupnunux/ansible-desktop-roles-cups.git
+  scm: git
+  version: master
+
+- name: cura
+  src: https://github.com/loupnunux/ansible-desktop-roles-cura.git
+  scm: git
+  version: master
+
+- name: darktable
+  src: https://github.com/loupnunux/ansible-desktop-roles-darktable.git
+  scm: git
+  version: master
+
+- name: digikam
+  src: https://github.com/loupnunux/ansible-desktop-roles-digikam.git
+  scm: git
+  version: master
+
+- name: dnf
+  src: https://github.com/loupnunux/ansible-desktop-roles-dnf.git
+  scm: git
+  version: master
+
+- name: dolphinemu
+  src: https://github.com/loupnunux/ansible-desktop-roles-dolfinemu.git
+  scm: git
+  version: master
+
+- name: filezilla
+  src: https://github.com/loupnunux/ansible-desktop-roles-filezilla.git
+  scm: git
+  version: master
+
+- name: firefox
+  src: https://github.com/loupnunux/ansible-desktop-roles-firefox.git
+  scm: git
+  version: master
+
+- name: freecad
+  src: https://github.com/loupnunux/ansible-desktop-roles-freecad.git
+  scm: git
+  version: master
+
+- name: gigolo
+  src: https://github.com/loupnunux/ansible-desktop-roles-gigolo.git
+  scm: git
+  version: master
+
+- name: gimp
+  src: https://github.com/loupnunux/ansible-desktop-roles-gimp.git
+  scm: git
+  version: master
+
+- name: git
+  src: https://github.com/loupnunux/ansible-desktop-roles-git.git
+  scm: git
+  version: master
+
+- name: gnomeextra
+  src: https://github.com/loupnunux/ansible-desktop-roles-gnomeextra.git
+  scm: git
+  version: master
+
+- name: gnomegames
+  src: https://github.com/loupnunux/ansible-desktop-roles-gnomegames.git
+  scm: git
+  version: master
+
+- name: gparted
+  src: https://github.com/loupnunux/ansible-desktop-roles-gparted.git
+  scm: git
+  version: master
+
+- name: inkscape
+  src: https://github.com/loupnunux/ansible-desktop-roles-inkscape.git
+  scm: git
+  version: master
+
+- name: iptables
+  src: https://github.com/loupnunux/ansible-desktop-roles-iptables.git
+  scm: git
+  version: master
+
+- name: keepassxc
+  src: https://github.com/loupnunux/ansible-desktop-roles-keepassxc.git
+  scm: git
+  version: master
+
+- name: kodi
+  src: https://github.com/loupnunux/ansible-desktop-roles-kodi.git
+  scm: git
+  version: master
+
+- name: krita
+  src: https://github.com/loupnunux/ansible-desktop-roles-krita.git
+  scm: git
+  version: master
+
+- name: libreoffice
+  src: https://github.com/loupnunux/ansible-desktop-roles-libreoffice.git
+  scm: git
+  version: master
+
+- name: linuxlts
+  src: https://github.com/loupnunux/ansible-desktop-roles-linuxlts.git
+  scm: git
+  version: master
+
+- name: locate
+  src: https://github.com/loupnunux/ansible-desktop-roles-locate.git
+  scm: git
+  version: master
+
+- name: networktools
+  src: https://github.com/loupnunux/ansible-desktop-roles-networktools.git
+  scm: git
+  version: master
+
+- name: owncloudclient
+  src: https://github.com/loupnunux/ansible-desktop-roles-owncloudclient.git
+  scm: git
+  version: master
+
+- name: pacman
+  src: https://github.com/loupnunux/ansible-desktop-roles-pacman.git
+  scm: git
+  version: master
+
+- name: retext
+  src: https://github.com/loupnunux/ansible-desktop-roles-retext.git
+  scm: git
+  version: master
+
+- name: root
+  src: https://github.com/loupnunux/ansible-desktop-roles-root.git
+  scm: git
+  version: master
+
+- name: rsync
+  src: https://github.com/loupnunux/ansible-desktop-roles-rsync.git
+  scm: git
+  version: master
+
+- name: ruby
+  src: https://github.com/loupnunux/ansible-desktop-roles-ruby.git
+  scm: git
+  version: master
+
+- name: seahorse
+  src: https://github.com/loupnunux/ansible-desktop-roles-seahorse.git
+  scm: git
+  version: master
+
+- name: shell
+  src: https://github.com/loupnunux/ansible-desktop-roles-shell.git
+  scm: git
+  version: master
+
+- name: simplescreenrecorder
+  src: https://github.com/loupnunux/ansible-desktop-roles-simplescreenrecorder.git
+  scm: git
+  version: master
+
+- name: ssh
+  src: https://github.com/loupnunux/ansible-desktop-roles-ssh.git
+  scm: git
+  version: master
+
+- name: steam
+  src: https://github.com/loupnunux/ansible-desktop-roles-steam.git
+  scm: git
+  version: master
+
+- name: terminator
+  src: https://github.com/loupnunux/ansible-desktop-roles-terminator.git
+  scm: git
+  version: master
+
+- name: testdisk
+  src: https://github.com/loupnunux/ansible-desktop-roles-testdisk.git
+  scm: git
+  version: master
+
+- name: thunar
+  src: https://github.com/loupnunux/ansible-desktop-roles-thunar.git
+  scm: git
+  version: master
+
+- name: thunderbird
+  src: https://github.com/loupnunux/ansible-desktop-roles-thunderbird.git
+  scm: git
+  version: master
+
+- name: users
+  src: https://github.com/loupnunux/ansible-desktop-roles-users.git
+  scm: git
+  version: master
+
+- name: videocodec
+  src: https://github.com/loupnunux/ansible-desktop-roles-videocodec.git
+  scm: git
+  version: master
+
+- name: vim
+  src: https://github.com/loupnunux/ansible-desktop-roles-vim.git
+  scm: git
+  version: master
+
+- name: virtualbox
+  src: https://github.com/loupnunux/ansible-desktop-roles-virtualbox.git
+  scm: git
+  version: master
+
+- name: vlc
+  src: https://github.com/loupnunux/ansible-desktop-roles-vlc.git
+  scm: git
+  version: master
+
+- name: wget
+  src: https://github.com/loupnunux/ansible-desktop-roles-wget.git
+  scm: git
+  version: master
+
+- name: wine
+  src: https://github.com/loupnunux/ansible-desktop-roles-wine.git
+  scm: git
+  version: master
+
+- name: x2goclient
+  src: https://github.com/loupnunux/ansible-desktop-roles-x2goclient.git
+  scm: git
+  version: master
+
+- name: yum
+  src: https://github.com/loupnunux/ansible-desktop-roles-yum.git
+  scm: git
+  version: master
+
+- name: zsh
+  src: https://github.com/loupnunux/ansible-desktop-roles-zsh.git
+  scm: git
+  version: master
+

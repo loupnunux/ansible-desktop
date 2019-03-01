@@ -1,0 +1,13 @@
+---
+
+- name: DESKTOP | Admin | Configure
+  hosts: desktop
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - { role: cups, state: 'configure' }
+    - { role: gigolo, state: 'configure' }
+    - { role: gnomeextra, state: 'configure' }
+    - { role: terminator, state: 'configure' }
+

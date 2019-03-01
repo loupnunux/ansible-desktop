@@ -1,0 +1,17 @@
+---
+
+- name: DESKTOP | Office | Uninstall
+  hosts: desktop
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - { role: calibre, state: 'uninstall' }
+    - { role: firefox, state: 'uninstall' }
+    - { role: keepassxc, state: 'uninstall' }
+    - { role: libreoffice, state: 'uninstall' }
+    - { role: owncloudclient, state: 'uninstall' }
+    - { role: retext, state: 'uninstall' }
+    - { role: thunar, state: 'uninstall' }
+    - { role: thunderbird, state: 'uninstall' }
+

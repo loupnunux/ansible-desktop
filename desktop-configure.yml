@@ -1,0 +1,8 @@
+---
+
+- import_playbook: playbooks/all-admin-configure.yml
+
+- import_playbook: playbooks/desktop-admin-configure.yml
+- import_playbook: playbooks/desktop-office-configure.yml
+- import_playbook: playbooks/desktop-graphic-configure.yml
+

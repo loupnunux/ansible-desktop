@@ -1,0 +1,21 @@
+---
+
+- name: ALL | Admin | Configure
+  hosts: all
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - { role: wget, state: 'configure' }
+    - { role: apt, state: 'configure' }
+    - { role: pacman, state: 'configure' }
+    - { role: yum, state: 'configure' }
+    - { role: dnf, state: 'configure' }
+    - { role: root, state: 'configure' }
+    - { role: users, state: 'configure' }
+    - { role: shell, state: 'configure' }
+    - { role: bash, state: 'configure' }
+    - { role: zsh, state: 'configure' }
+    - { role: iptables, state: 'configure' }
+    - { role: cronapt, state: 'configure' }
+

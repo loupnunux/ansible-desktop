@@ -1,0 +1,8 @@
+group_vars/*
+!group_vars/README.md
+host_vars/*
+!host_vars/README.md
+roles/*
+!roles/README.md
+extra_perso/*
+!extra_perso/README.md

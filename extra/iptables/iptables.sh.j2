@@ -1,0 +1,67 @@
+#!/bin/bash
+
+# On flush iptables.
+iptables -F
+ip6tables -F
+
+# On supprime toutes les chaînes utilisateurs.
+iptables -X
+ip6tables -X
+
+# On interdit tout
+iptables -t filter -P INPUT DROP
+ip6tables -t filter -P INPUT DROP
+iptables -t filter -P FORWARD DROP
+ip6tables -t filter -P FORWARD DROP
+iptables -t filter -P OUTPUT DROP
+ip6tables -t filter -P OUTPUT DROP
+
+
+
+# On autorise le reseau docker a rentrer pour pouvoir forwarder
+iptables -A INPUT -s 172.17.0.0/16 -d {{ ansible_default_ipv4.address }}/32 -j ACCEPT
+
+# On autorise le port 22 en sortie
+iptables -A OUTPUT -p TCP --sport 22 -j ACCEPT
+ip6tables -A OUTPUT -p TCP --sport 22 -j ACCEPT
+
+# Permettre à une connexion ouverte de recevoir du trafic en entrée.
+iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+ip6tables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+
+# Permettre à une connexion ouverte de recevoir du trafic en sortie.
+iptables -A OUTPUT -m conntrack ! --ctstate INVALID -j ACCEPT
+ip6tables -A OUTPUT -m conntrack ! --ctstate INVALID -j ACCEPT
+
+# On accepte la boucle locale en entrée.
+iptables -I INPUT -i lo -j ACCEPT
+ip6tables -I OUTPUT -o lo -j ACCEPT
+
+# On log les paquets en entrée.
+iptables -A INPUT -j LOG --log-prefix "[INPUT_v4_DROP]==>"
+ip6tables -A INPUT -j LOG --log-prefix "[INPUT_v6_DROP]==>"
+
+# On log les paquets forward.
+iptables -A FORWARD -j LOG --log-prefix "[FORWARD_v4_DROP]==>"
+ip6tables -A FORWARD -j LOG --log-prefix "[FORWARD_v6_DROP]==>"
+
+# On log les paquets output.
+iptables -A OUTPUT -j LOG --log-prefix "[OUTPUT_v4_DROP]==>"
+ip6tables -A OUTPUT -j LOG --log-prefix "[OUTPUT_v6_DROP]==>"
+
+
+# On sauvegarde la conf
+iptables-save > /etc/iptables/rules.v4
+ip6tables-save > /etc/iptables/rules.v6
+
+# On redemarre le service
+systemctl restart iptables
+
+# On affiche le resultat
+echo -en "\n=== IPTABLE v4 ===\n"
+iptables -L -v -n --line-numbers
+echo -en "\n=== IPTABLE v6 ===\n"
+ip6tables -L -v -n --line-numbers
+
+exit 0
+
