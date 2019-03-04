@@ -10,7 +10,7 @@ if [ ! -d /opt/ansible ]; then
   cd /opt
   sudo mkdir -p /opt/ansible
   sudo chown $(id -un) /opt/ansible
-  git clone git@vm-gitlab-01:desktop-ansible/ansible.git ansible
+  git clone git@github.com:loupnunux/ansible-desktop.git ansible
 fi
 
 echo '###'
