@@ -1,0 +1,10 @@
+Host *
+  User {{ item.username }} 
+  IdentityFile ~/.ssh/id_rsa
+  ControlMaster auto
+  ControlPath ~/.ssh/multiplex/%r@%h:%p
+  ForwardAgent yes
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  Compression no
+
