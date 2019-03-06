@@ -12,6 +12,11 @@ mkdir -p $rep
 cat <<EOF >$file
 ---
 
+usergroups:
+  - groupname: vboxusers
+    gid: 127
+    system: yes
+
 users:
   - username: ${user}
     name: ${user^}
@@ -19,6 +24,7 @@ users:
     shell: /usr/bin/zsh
     home: /home/${user}
     password: ${password}
+    groups: ${user},sudo,users,disk,vboxusers
     firefox_profile:
       - name: ${user}
     git_global:
