@@ -1,7 +1,6 @@
 #!/bin/bash
 
-scripts_rep=$(dirname $0)
-
+scripts_rep="$( cd "$(dirname "$0")" ; pwd -P )"
 
 
 f_requirement() {
