@@ -4,7 +4,9 @@ scripts_rep=$(dirname $0)
 
 
 f_role() {
+  cd $scripts_rep
   cd ../roles
+
   for i in $(grep 'src: ' ../requirements.yml | awk -F'src: ' '{print $2}'); do
     name=$(echo $i | awk -F'-' '{print $4}'| awk -F'.' '{print $1}')
     if [ ! -d $name ]; then
