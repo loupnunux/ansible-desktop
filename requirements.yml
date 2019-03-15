@@ -170,6 +170,11 @@
   scm: git
   version: master
 
+- name: python
+  src: https://github.com/loupnunux/ansible-desktop-roles-python.git
+  scm: git
+  version: master
+
 - name: retext
   src: https://github.com/loupnunux/ansible-desktop-roles-retext.git
   scm: git
