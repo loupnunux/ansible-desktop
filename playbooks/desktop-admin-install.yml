@@ -8,6 +8,7 @@
   roles:
     - { role: cups, state: 'install' }
     - { role: filezilla, state: 'install' }
+    - { role: flash, state: 'install' }
     - { role: gigolo, state: 'install' }
     - { role: gnomeextra, state: 'install' }
     - { role: gparted, state: 'install' }

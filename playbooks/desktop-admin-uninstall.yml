@@ -8,6 +8,7 @@
   roles:
     - { role: cups, state: 'uninstall' }
     - { role: filezilla, state: 'uninstall' }
+    - { role: flash, state: 'uninstall' }
     - { role: gigolo, state: 'uninstall' }
     - { role: gnomeextra, state: 'uninstall' }
     - { role: gparted, state: 'uninstall' }

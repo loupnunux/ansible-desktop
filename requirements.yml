@@ -80,6 +80,11 @@
   scm: git
   version: master
 
+- name: flash
+  src: https://github.com/loupnunux/ansible-desktop-roles-flash.git
+  scm: git
+  version: master
+
 - name: freecad
   src: https://github.com/loupnunux/ansible-desktop-roles-freecad.git
   scm: git
