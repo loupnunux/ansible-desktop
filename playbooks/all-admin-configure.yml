@@ -18,5 +18,5 @@
     - { role: bash, state: 'configure' }
     - { role: zsh, state: 'configure' }
     - { role: iptables, state: 'configure' }
-    - { role: cronapt, state: 'configure' }
+    - { role: cronapt, state: 'install' }
 
