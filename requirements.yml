@@ -35,6 +35,11 @@
   scm: git
   version: master
 
+- name: chrome
+  src: https://github.com/loupnunux/ansible-desktop-roles-chrome.git
+  scm: git
+  version: master
+
 - name: cronapt
   src: https://github.com/loupnunux/ansible-desktop-roles-cronapt.git
   scm: git

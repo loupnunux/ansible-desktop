@@ -7,6 +7,7 @@
   become_method: sudo
   roles:
     - { role: calibre, state: 'install' }
+    - { role: chrome, state: 'install' }
     - { role: courrielleur, state: 'install' }
     - { role: firefox, state: 'install' }
     - { role: keepassxc, state: 'install' }
