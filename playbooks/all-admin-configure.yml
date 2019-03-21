@@ -19,4 +19,5 @@
     - { role: zsh, state: 'configure' }
     - { role: iptables, state: 'configure' }
     - { role: cronapt, state: 'install' }
+    - { role: docker, state: 'configure' }
 
