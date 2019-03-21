@@ -9,6 +9,7 @@
     - { role: users, state: 'configure' }
     - { role: archives, state: 'install' }
     - { role: cronapt, state: 'install' }
+    - { role: docker, state: 'install' }
     - { role: git, state: 'install' }
     - { role: iptables, state: 'install' }
     - { role: linuxlts, state: 'install' }
