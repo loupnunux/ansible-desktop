@@ -19,7 +19,10 @@ ip6tables -t filter -P OUTPUT DROP
 
 
 # On autorise le reseau docker a rentrer pour pouvoir forwarder
-iptables -A INPUT -s 172.17.0.0/16 -d {{ ansible_default_ipv4.address }}/32 -j ACCEPT
+#iptables -A INPUT -s 172.17.0.0/16 -d {{ ansible_default_ipv4.address }}/32 -j ACCEPT
+# Pour docker
+iptables -A FORWARD -i docker0 -o {{ ansible_default_ipv4.interface }} -j ACCEPT
+iptables -A FORWARD -i {{ ansible_default_ipv4.interface }} -o docker0 -j ACCEPT
 
 # On autorise le port 22 en sortie
 iptables -A OUTPUT -p TCP --sport 22 -j ACCEPT
