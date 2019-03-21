@@ -70,6 +70,11 @@
   scm: git
   version: master
 
+- name: docker
+  src: https://github.com/loupnunux/ansible-desktop-roles-docker.git
+  scm: git
+  version: master
+
 - name: dolphinemu
   src: https://github.com/loupnunux/ansible-desktop-roles-dolphinemu.git
   scm: git
