@@ -8,6 +8,7 @@
   roles:
     - { role: archives, state: 'uninstall' }
     - { role: cronapt, state: 'uninstall' }
+    - { role: docker, state: 'uninstall' }
     - { role: git, state: 'uninstall' }
     - { role: iptables, state: 'uninstall' }
     - { role: linuxlts, state: 'uninstall' }
