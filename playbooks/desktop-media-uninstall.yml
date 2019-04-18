@@ -8,6 +8,7 @@
   roles:
     - { role: audacity, state: 'uninstall' }
     - { role: avidemux, state: 'uninstall' }
+    - { role: handbrake, state: 'uninstall' }
     - { role: kodi, state: 'uninstall' }
     - { role: simplescreenrecorder, state: 'uninstall' }
     - { role: videocodec, state: 'uninstall' }

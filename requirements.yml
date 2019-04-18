@@ -130,6 +130,11 @@
   scm: git
   version: master
 
+- name: handbrake
+  src: https://github.com/loupnunux/ansible-desktop-roles-handbrake.git
+  scm: git
+  version: master
+
 - name: inkscape
   src: https://github.com/loupnunux/ansible-desktop-roles-inkscape.git
   scm: git

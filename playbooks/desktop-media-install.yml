@@ -8,6 +8,7 @@
   roles:
     - { role: audacity, state: 'install' }
     - { role: avidemux, state: 'install' }
+    - { role: handbrake, state: 'install' }
     - { role: kodi, state: 'install' }
     - { role: simplescreenrecorder, state: 'install' }
     - { role: videocodec, state: 'install' }
