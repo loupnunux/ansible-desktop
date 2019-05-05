@@ -10,6 +10,7 @@
     - { role: avidemux, state: 'install' }
     - { role: handbrake, state: 'install' }
     - { role: kodi, state: 'install' }
+    - { role: shotcut, state: 'install' }
     - { role: simplescreenrecorder, state: 'install' }
     - { role: videocodec, state: 'install' }
     - { role: vlc, state: 'install' }
