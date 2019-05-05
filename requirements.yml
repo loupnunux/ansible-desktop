@@ -225,6 +225,11 @@
   scm: git
   version: master
 
+- name: shotcut
+  src: https://github.com/loupnunux/ansible-desktop-roles-shotcut.git
+  scm: git
+  version: master
+
 - name: simplescreenrecorder
   src: https://github.com/loupnunux/ansible-desktop-roles-simplescreenrecorder.git
   scm: git
