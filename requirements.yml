@@ -160,6 +160,11 @@
   scm: git
   version: master
 
+- name: kvm
+  src: https://github.com/loupnunux/ansible-desktop-roles-kvm.git
+  scm: git
+  version: master
+
 - name: libreoffice
   src: https://github.com/loupnunux/ansible-desktop-roles-libreoffice.git
   scm: git

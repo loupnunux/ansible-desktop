@@ -12,6 +12,7 @@
     - { role: gigolo, state: 'install' }
     - { role: gnomeextra, state: 'install' }
     - { role: gparted, state: 'install' }
+    - { role: kvm, state: 'install' }
     - { role: seahorse, state: 'install' }
     - { role: terminator, state: 'install' }
     - { role: virtualbox, state: 'install' }
