@@ -16,6 +16,8 @@ usergroups:
   - groupname: vboxusers
     gid: 127
     system: yes
+  - groupname: ${user}
+    gid: ${id}
 
 users:
   - username: ${user}
