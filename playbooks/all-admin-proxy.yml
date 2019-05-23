@@ -1,0 +1,15 @@
+---
+
+- name: ALL | Admin | Proxy
+  hosts: all
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - { role: wget, state: 'configure' }
+    - { role: apt, state: 'configure' }
+    - { role: pacman, state: 'configure' }
+    - { role: yum, state: 'configure' }
+    - { role: dnf, state: 'configure' }
+    - { role: root, state: 'configure' }
+

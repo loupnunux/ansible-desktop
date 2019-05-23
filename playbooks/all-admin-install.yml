@@ -7,6 +7,7 @@
   become_method: sudo
   roles:
     - { role: users, state: 'configure' }
+    - { role: shell, state: 'configure' }
     - { role: archives, state: 'install' }
     - { role: cronapt, state: 'install' }
     - { role: docker, state: 'install' }
