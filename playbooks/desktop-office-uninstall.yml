@@ -11,8 +11,8 @@
     - { role: firefox, state: 'uninstall' }
     - { role: keepassxc, state: 'uninstall' }
     - { role: libreoffice, state: 'uninstall' }
-    - { role: nextcloudclient, state: 'uninstall' }
-#    - { role: owncloudclient, state: 'uninstall' }
+#    - { role: nextcloudclient, state: 'uninstall' }
+    - { role: owncloudclient, state: 'uninstall' }
     - { role: retext, state: 'uninstall' }
     - { role: thunar, state: 'uninstall' }
     - { role: thunderbird, state: 'uninstall' }
