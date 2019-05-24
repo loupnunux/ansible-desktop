@@ -11,7 +11,8 @@
     - { role: firefox, state: 'install' }
     - { role: keepassxc, state: 'install' }
     - { role: libreoffice, state: 'install' }
-    - { role: owncloudclient, state: 'install' }
+    - { role: nextcloudclient, state: 'install' }
+#    - { role: owncloudclient, state: 'install' }
     - { role: retext, state: 'install' }
     - { role: thunar, state: 'install' }
     - { role: thunderbird, state: 'install' }

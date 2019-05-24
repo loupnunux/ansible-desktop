@@ -185,6 +185,11 @@
   scm: git
   version: master
 
+- name: nextcloudclient
+  src: https://github.com/loupnunux/ansible-desktop-roles-nextcloudclient.git
+  scm: git
+  version: master
+
 - name: owncloudclient
   src: https://github.com/loupnunux/ansible-desktop-roles-owncloudclient.git
   scm: git
