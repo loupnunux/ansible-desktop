@@ -16,6 +16,7 @@
     - { role: linuxlts, state: 'install' }
     - { role: locate, state: 'install' }
     - { role: networktools, state: 'install' }
+    - { role: nfsclient, state: 'install' }
     - { role: python, state: 'install' }
     - { role: rsync, state: 'install' }
     - { role: ruby, state: 'install' }

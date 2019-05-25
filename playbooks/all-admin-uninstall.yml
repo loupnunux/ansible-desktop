@@ -14,6 +14,7 @@
     - { role: linuxlts, state: 'uninstall' }
     - { role: locate, state: 'uninstall' }
     - { role: networktools, state: 'uninstall' }
+    - { role: nfsclient, state: 'uninstall' }
     - { role: rsync, state: 'uninstall' }
     - { role: ruby, state: 'uninstall' }
     - { role: ssh, state: 'uninstall' }

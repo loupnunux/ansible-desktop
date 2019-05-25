@@ -190,6 +190,11 @@
   scm: git
   version: master
 
+- name: nfsclient
+  src: https://github.com/loupnunux/ansible-desktop-roles-nfsclient.git
+  scm: git
+  version: master
+
 - name: owncloudclient
   src: https://github.com/loupnunux/ansible-desktop-roles-owncloudclient.git
   scm: git
