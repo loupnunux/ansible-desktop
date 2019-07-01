@@ -10,10 +10,10 @@ f_role() {
   for i in $(grep 'src: ' ../requirements.yml | awk -F'src: ' '{print $2}'); do
     name=$(echo $i | awk -F'-' '{print $4}'| awk -F'.' '{print $1}')
     if [ ! -d $name ]; then
-      echo "### Clone the repository $i"
+      echo -e "### [\e[33mCLONE\e[0m] Repository $i"
       git clone $i $name
     else
-      echo "### Pull the repository $i"
+      echo -e "### [\e[34mPULL\e[0m] Repository $i"
       (cd $name && git pull)
     fi
   done
