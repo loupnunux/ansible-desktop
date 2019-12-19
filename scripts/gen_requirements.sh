@@ -11,9 +11,10 @@ f_requirement() {
   echo -e "# Install a role at a specific commit from GitLab#\n" > requirements.yml
   for i in $(ls roles); do
     if [ $i != README.md ]; then
+      url=$(cat roles/$i/.git/config | grep url | awk -F ' = ' '{print $2}')
 cat <<EOF >>requirements.yml
 - name: $i
-  src: https://github.com/loupnunux/ansible-desktop-roles-$i.git
+  src: $url
   scm: git
   version: master
 
